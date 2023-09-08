@@ -29,4 +29,15 @@ fn main() {
     }
     println!("{:?}",arr);
 
+    let mut v = Vec::new();
+    for i in 0..=10 {
+        v.push(i);
+    }
+
+    println!("{:?}",v);
+
+    let mat = [[2,5,6,7],[3,5,9,8]];
+
+    println!("{:?}",mat);
+
 }
