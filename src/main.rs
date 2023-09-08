@@ -14,9 +14,19 @@ fn main() {
     println!("{}",full_name);
     println!("{}",full_name_2);
 
-    let arr:[i32;3] = [2,95,63];
+    let mut arr:[i32;3] = [2,95,63];
     println!("{:?}",arr);
 
     let arr_2 = [5;5];
     println!("{:?}",arr_2);
+
+    let tup = ("ali",1542,12.5,true);
+    println!("{:?}",tup);
+
+    for n in arr.iter_mut() {
+        *n += 25;
+        println!("{}",n);
+    }
+    println!("{:?}",arr);
+
 }
